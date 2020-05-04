@@ -1,0 +1,17 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "SIGLA"
+theme = "hugograyscale"
+#googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+    # Provide some metadata for search and indexing services
+    description = "Servicios de información geográfica en Latinoamérica"
+
+[Author]
+    name = "Nico Lois y Daniu Risaro"
+    email = "dbrisaro@gmail.com"
+
+[Social]
+    twitter = "siglatino"
