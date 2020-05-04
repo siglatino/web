@@ -1,7 +1,7 @@
 baseURL = "http://example.com/"
 languageCode = "en-us"
 title = "SIGLA"
-theme = "hugograyscale"
+theme = 
 #googleAnalytics = ""
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
