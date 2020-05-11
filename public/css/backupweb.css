@@ -34,6 +34,9 @@ p {
   font-size: 16px; /* Tamanio de texto no titulo */
   line-height: 1.5;
   margin: 0 0 20px;
+  /*margin:0;
+  text-align: justify;
+  text-justify: inter-word;*/
 }
 
 @media (min-width: 768px) {
@@ -269,4 +272,13 @@ footer p {
 
 img::selection {
   background: transparent;
+}
+
+.contenedor-imagenes-nosotros {
+  display: flex;
+}
+
+.contenedor-imagenes-nosotros img {
+  width: 90px;
+  margin: 10px;
 }
