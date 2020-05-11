@@ -275,11 +275,20 @@ img::selection {
 }
 
 .contenedor-imagenes-nosotros {
-  display: flex;
   margin: auto;
+  text-align: center;
 }
 
 .contenedor-imagenes-nosotros img {
   width: 70px;
   margin: 5px;
+  transition: 0.5s;
+}
+.profile-pic {
+  border-radius: 50%;
+
+}
+
+.contenedor-imagenes-nosotros img:hover{
+  transform: scale(1.2);
 }
