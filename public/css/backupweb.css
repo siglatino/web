@@ -276,6 +276,7 @@ img::selection {
 
 .contenedor-imagenes-nosotros {
   display: flex;
+  margin: auto;
 }
 
 .contenedor-imagenes-nosotros img {
