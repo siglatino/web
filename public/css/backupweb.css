@@ -1,3 +1,6 @@
+
+
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
@@ -41,12 +44,12 @@ p {
 
 a {
   transition: all 0.2s ease-in-out;
-  color: black; /* color mail  */
+  color: #fafafa; /* color mail  */
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #1d9b6c; /* cambio color mail cuando te paras arriba*/
+  color: #47b649; /* cambio color mail cuando te paras arriba*/
 }
 
 #mainNav {
@@ -137,7 +140,7 @@ header p {
 .improve-contrast-box {
   background: rgba(0, 0, 0, 0); /* cajita para resaltar */
   border-radius: 15px;  
-  text-shadow: 3px 3px 8px rgba(255, 255, 255, 1); /* Color y tamanio de la sombra del texto*/
+  text-shadow: 3px 3px 8px transparent /* rgba(255, 255, 255, 1); /* Color y tamanio de la sombra del texto*/
 }
 
 @media (min-width: 768px) {
@@ -179,9 +182,7 @@ header p {
 
 .section-2 { /* imagen de segunda seccion */
   color: white;
-  background: url("../img/section2-bg.jpg") no-repeat center center scroll;
-  background-color: black;
-  background-size: cover;
+  background-color: #fafaaf;
   
 }
 
