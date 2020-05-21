@@ -1,43 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 
-
-body {
-  font-family: 'Poppins';
-  /*position: relative;*/
+html, body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
   width: 100%; /* Ancho y alto de toda la pag */ 
   height: 100%;
-  color: #47b649; /* Color texto del cuerpo general */ 
-  color: #7FBF7F;
-
-  background-color: black; /* Fondo de toda la pag */
+  color: black; /* Color texto del cuerpo general */ 
+  background-color: #78BE21;
+  font-size: 20px;
 }
 
-html {
-  width: 100%; /* Ancho y alto de toda la pag */
+.portada {
   height: 100%;
 }
 
-h1,
+header h1{
+  color: #919D9D;
+  font-weight: 500;
+  }
+
+
+header h1 span{
+  color: #78BE21;
+  
+}
+
+#sigla{
+
+  font-size: 150px;
+
+}
+
+.column-1 {
+  float: left;
+  width: 80%;
+  padding: 10px;
+  height: 240px; /* Should be removed. Only for demonstration */
+  font-size: 50px;
+
+  background-color: white;
+  border: 1px solid black;
+}
+
+.column-2 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 240px; /* Should be removed. Only for demonstration */
+  font-size: 30px;
+  
+  margin:0;
+  text-align: justify;
+  text-justify: inter-word;
+
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#home-img{
+  width: 40px;
+  height: 40px;
+}
+
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins';
-  font-weight: 700;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
   margin: 0 0 35px; /* Margen de cada seccion la pag */
   letter-spacing: 1px;
   text-transform: uppercase; /* Titulos en mayus */
 }
 
 p {
-  font-size: 16px; /* Tamanio de texto no titulo */
+  font-size: 16px; /* Tamanio de texto en párrafos */
   line-height: 1.5;
   margin: 0 0 20px;
-  /*margin:0;
-  text-align: justify;
-  text-justify: inter-word;*/
 }
 
 @media (min-width: 768px) {
@@ -55,19 +103,21 @@ a {
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #47b649; /* cambio color mail cuando te paras arriba*/
+  color: black;
 }
 
+
 #mainNav {
-  font-family: 'Poppins';
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5); /* tamanio linea que separa header, color y transparencia */
-  background-color: #47b649; /* Fondo del header */
+  background-color: #78BE21;
+  border: 2px solid pink;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 15px; /* Tamanio letra menu */
+  font-size: 25px; /* Tamanio letra menu */
   padding: 10px; /* Tamanio menu */
   color: black; /* Color letra menu */
   border: 2px solid black; /* volor borde menu */
@@ -75,6 +125,7 @@ a:focus, a:hover {
 
 #mainNav .navbar-brand {
   font-weight: 700;
+  border: 2px solid pink;
 }
 
 #mainNav a {
@@ -83,6 +134,10 @@ a:focus, a:hover {
 
 #mainNav .navbar-nav .nav-item {
   transition: background 1s ease-in-out; /* Cuanto tiempoo tarda en cambiar el boton del menu que elegis cuando te paras arriba */
+  border: 2px solid red;
+  font-size: 20px;
+  background-color: #919D9D;
+
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -93,7 +148,9 @@ a:focus, a:hover {
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: #47b649;
+  background-color: #78BE21;
+  border: 10px solid pink;
+
 }
 
 @media (min-width: 992px) {
@@ -123,24 +180,22 @@ a:focus, a:hover {
 header {
   display: table;
   width: 100%; /* ancho de primera seccion */
-  height: auto; /* No cambia.. */
-  padding: 200px 0;
+  padding: 100px 0;
   text-align: center; /* alineacion texto primera pag */
-  color: transparent; /* color texto de primera seccion */
-  background: url("../img/section0logo.jpg") no-repeat bottom center scroll; /* imagen fondo */
-  background-color: #47b649; /* color fondo primera seccion */
-  background-size: cover; /* tamano de imagen */
+  color: black; /* color texto de primera seccion */
+  background-color:#919D9D; /* color fondo primera seccion */
+  border: 2px solid red;
 }
 
 #intro-body {
   display: table-cell;
   vertical-align: middle; /* posicion texto primera seccion */
+  border: 2px solid gold;
+  background-color: white;
 }
-header h1 {
-  font-size: 50px; /* Ni idea */
-}
+
 header p {
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .improve-contrast-box {
@@ -162,8 +217,8 @@ header p {
   }
 }
 
-/* .btn-circle {  /* Boton que baja primera seccion */
-/*  font-size: 31px;
+.btn-circle {  /* Boton que baja primera seccion */
+  font-size: 31px;
   width: 55px;
   height: 55px;
   margin-top: 20px;
@@ -172,19 +227,16 @@ header p {
   color: white;
   border: 3px solid white;
   border-radius: 10% !important; /* 100% lo hace circular al boton este */
-/*  background: transparent;
+  background: transparent;
 }
 
 .btn-circle:focus, .btn-circle:hover { /* Que le pasa al boton cuando lo tocas */
-/*  color: #47b649;
+  color:  #78BE21;
   outline: none;
-/*   background: rgba(255, 255, 255, 0.3);  
-}     */
+   background: rgba(255, 255, 255, 0.3);  
+}     
 
 .content-section {
-  /*padding-top: 100px; /* Margen de cada seccion */
-  /*padding-bottom: 100px; */
-    /*position: relative;*/
   margin: 0;
   height: 100vh;
   display: flex;
@@ -222,16 +274,17 @@ header p {
 }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: green;
+  border: 1px solid green;
   background-color: transparent;
 }
 
 .btn-default:focus, .btn-default:hover {
   color: black;
-  border: 1px solid #42DCA3;
+  border: 1px solid #919D9D;
+  ;
   outline: none;
-  background-color: #42DCA3;
+  background-color: #919D9D;
 }
 
 ul.banner-social-buttons {
@@ -293,3 +346,18 @@ img::selection {
 .contenedor-imagenes-nosotros img:hover{
   transform: scale(1.2);
 }
+
+
+#sigla{
+  margin:0;
+  font-size: 220px;
+
+}
+
+
+.portada{
+
+  background-color: #78BE21;
+
+}
+
