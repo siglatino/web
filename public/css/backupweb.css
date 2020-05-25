@@ -333,11 +333,12 @@ img::selection {
   text-align: center;
 }
 
-.contenedor-imagenes-nosotros img {
-  width: 70px;
+img {
+  width: 200px;
   margin: 5px;
   transition: 0.5s;
 }
+
 .profile-pic {
   border-radius: 50%;
 
@@ -393,9 +394,36 @@ img::selection {
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+
+.container-nosotros-seccion {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.grid-item {
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+/* Icons */
+
+.fa {
+  transition: all 0.2s ease-in-out;
+  color: black;
+}
+
+.fa:hover{
+  color: #78BE21;
+
 }
