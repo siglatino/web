@@ -244,24 +244,10 @@ header p {
   justify-content: center;
 }
 
-.section-2 { /* imagen de segunda seccion */
-  color: white;
-  background-color: #a8a8a8;
-  
-}
-
-#map {
-  width: 100%;
-  height: 300px;
-}
-
 @media (min-width: 992px) {
   .content-section {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
   }
 }
 
@@ -309,14 +295,6 @@ ul.banner-social-buttons {
   }
 }
 
-footer {
-  padding: 50px 0;
-}
-
-footer p {
-  font-size: 14px;
-  margin: 0;
-}
 
 ::selection {
   background: #fcfcfc;
@@ -334,14 +312,13 @@ img::selection {
 }
 
 img {
-  width: 200px;
+  width: 150px;
   margin: 5px;
   transition: 0.5s;
 }
 
 .profile-pic {
-  border-radius: 50%;
-
+  border-radius: 70%;
 }
 
 .contenedor-imagenes-nosotros img:hover{
@@ -385,7 +362,6 @@ img {
   height: 350px;
 }
 
-
 .container-nosotros {
   display: grid;
   grid-template-columns: auto auto;
@@ -400,30 +376,72 @@ img {
   text-align: center;
 }
 
-
 .container-nosotros-seccion {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .grid-item {
+  position: relative;
   border: 1px solid red;
   padding: 10px;
   font-size: 30px;
   text-align: center;
 }
 
-
 /* Icons */
-
 .fa {
   transition: all 0.2s ease-in-out;
   color: black;
+  font-size: 20px;
 }
 
 .fa:hover{
-  color: #78BE21;
+  color: white;
 
+}
+
+.section-2{
+  background-color: #a8a8a8;
+  color:black;
+}
+
+.section-2 p{
+  color:black;
+font-size: 30px;
+
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #78BE21;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .5s, visibility .2s;
+}
+
+.grid-item:hover .img__description_layer {
+  visibility: visible;
+  opacity: .9;
+}
+
+.img__description {
+  transition: .5s;
+  transform: translateY(1em);
+}
+
+.grid-item:hover .img__description {
+  transform: translateY(0);
 }
