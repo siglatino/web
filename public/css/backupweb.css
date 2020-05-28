@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 html, body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
@@ -339,7 +341,6 @@ img {
 
 }
 
-
 .grid-container {
   display: grid;
   align-content: center;
@@ -352,7 +353,6 @@ img {
 
 }
 
-
 .columna{
   border: 1px solid black;
   text-align: center;
@@ -362,18 +362,18 @@ img {
   height: 350px;
 }
 
+/* seccion 2 */
+
+.container-sec-2{
+  position: relative;
+  margin: 40px;
+}
+
 .container-nosotros {
   display: grid;
   grid-template-columns: auto auto;
   background-color: #2196F3;
   padding: 10px;
-}
-
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
 }
 
 .container-nosotros-seccion {
@@ -384,6 +384,7 @@ img {
 }
 
 .grid-item {
+  padding: 20px;
   position: relative;
   border: 1px solid red;
   padding: 10px;
@@ -408,16 +409,22 @@ img {
   color:black;
 }
 
+.section-2 h3{
+  color: black;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
 .section-2 p{
   color:black;
-font-size: 30px;
+font-size: 20px;
 
 }
 
-.img__description_layer {
+.img-descripcion-container {
   position: absolute;
-  top: 20%;
-  bottom: 20%;
+  top: 15%;
+  bottom: 15%;
   left: 0;
   right: 0;
   background: #78BE21;
@@ -432,16 +439,49 @@ font-size: 30px;
   transition: opacity .5s, visibility .2s;
 }
 
-.grid-item:hover .img__description_layer {
+.grid-item:hover .img-descripcion-container {
   visibility: visible;
   opacity: .9;
+  margin: 20px;
 }
 
-.img__description {
+.img-descripcion {
   transition: .5s;
   transform: translateY(1em);
+  margin: 10px;
+
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
 }
 
-.grid-item:hover .img__description {
+.grid-item:hover .img-descripcion {
   transform: translateY(0);
 }
+
+/* footer*/
+
+
+.social-footer-container {
+  position: relative;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.social-footer{
+  position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    bottom: 0;
+}
+
+
+.social-footer h2{
+  font-family: 'Handlee';
+  margin: 0;
+  border: 0px solid black;
+  text-transform: lowercase;
+  font-size: 20px
+}
+
