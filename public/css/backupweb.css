@@ -2,44 +2,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-html, body {
+html { height: 100%; }
+
+body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin: 0;
+  position: relative;
   width: 100%; /* Ancho y alto de toda la pag */ 
-  height: 100%;
+  min-height: 100%;
   color: black; /* Color texto del cuerpo general */ 
   background-color: #78BE21;
   font-size: 20px;
 }
 
-.portada {
-  height: 100%;
+.container{
+
+  background-color: tomato;
+
 }
 
-header h1{
-  color: #919D9D;
-  font-weight: 500;
-  }
-
-
-header h1 span{
-  color: #78BE21;
-  
-}
-
+/* 
 #sigla{
 
   font-size: 150px;
 
-}
+} */
 
 .column-1 {
   float: left;
   width: 80%;
   padding: 10px;
-  height: 240px; /* Should be removed. Only for demonstration */
+  height: 240px; 
   font-size: 50px;
-
   background-color: white;
   border: 1px solid black;
 }
@@ -48,7 +42,7 @@ header h1 span{
   float: left;
   width: 20%;
   padding: 10px;
-  height: 240px; /* Should be removed. Only for demonstration */
+  height: 240px;
   font-size: 30px;
   
   margin:0;
@@ -59,17 +53,6 @@ header h1 span{
   border: 1px solid black;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#home-img{
-  width: 40px;
-  height: 40px;
-}
 
 
 h2,
@@ -108,21 +91,24 @@ a:focus, a:hover {
   color: black;
 }
 
+/* navbar */
+/* 
+
 
 #mainNav {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5); /* tamanio linea que separa header, color y transparencia */
+  border-bottom: 3px solid yellow;
   background-color: #78BE21;
   border: 2px solid pink;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 25px; /* Tamanio letra menu */
-  padding: 10px; /* Tamanio menu */
-  color: black; /* Color letra menu */
-  border: 2px solid black; /* volor borde menu */
+  font-size: 25px; 
+  padding: 10px;
+  color: black; 
+  border: 2px solid black; 
 }
 
 #mainNav .navbar-brand {
@@ -131,11 +117,11 @@ a:focus, a:hover {
 }
 
 #mainNav a {
-  color: black; /* Color letra dentro menu */
+  color: black; 
 }
 
 #mainNav .navbar-nav .nav-item {
-  transition: background 1s ease-in-out; /* Cuanto tiempoo tarda en cambiar el boton del menu que elegis cuando te paras arriba */
+  transition: background 1s ease-in-out;
   border: 2px solid red;
   font-size: 20px;
   background-color: #919D9D;
@@ -145,7 +131,7 @@ a:focus, a:hover {
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(white, 100%);
   outline: none;
-  background-color: transparent; /* Color del cambio cuando te paras arriba de item de menu*/
+  background-color: transparent; 
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
@@ -174,52 +160,57 @@ a:focus, a:hover {
     outline: none;
     background-color: #47b649;
   }
-  #mainNav .nav-link/*.active*/:hover { /* saco active para que siempre que pase por arriba cambie de color */
-    color: white; /*Cuando te paras arriba del item de menu activo a q color cambia*/
+  #mainNav .nav-link.active:hover { 
+    color: white; 
   }
 }
+ */
 
+
+/* 
 header {
-  display: table;
-  width: 100%; /* ancho de primera seccion */
-  padding: 100px 0;
-  text-align: center; /* alineacion texto primera pag */
-  color: black; /* color texto de primera seccion */
-  background-color:#919D9D; /* color fondo primera seccion */
+  display: inline-flex;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center; 
+  color: black; 
+  background-color:#919D9D;
   border: 2px solid red;
+
 }
+ */
+
 
 #intro-body {
-  display: table-cell;
-  vertical-align: middle; /* posicion texto primera seccion */
+  height: 200%;
   border: 2px solid gold;
-  background-color: white;
-}
+  margin-bottom: -10%;
+} 
 
 header p {
   font-size: 28px;
 }
 
 .improve-contrast-box {
-  background: rgba(0, 0, 0, 0); /* cajita para resaltar */
+  background: rgba(0, 0, 0, 0); 
   border-radius: 15px;  
-  text-shadow: 3px 3px 8px transparent /* rgba(255, 255, 255, 1); /* Color y tamanio de la sombra del texto*/
+  text-shadow: 3px 3px 8px transparent; 
 }
 
 @media (min-width: 768px) {
   header {
-    height: 100%; /* Tamaño primera seccion */
+    height: 100%; 
     padding: 100;
   }
   header h1 {
-    font-size: 100px; /* Tamaño texto titulo primera seccion */
+    font-size: 100px;
   }
   header p {
-    font-size: 22px; /* Tamaño texto titulo primera seccion */
+    font-size: 22px; 
   }
 }
-
-.btn-circle {  /* Boton que baja primera seccion */
+/* 
+.btn-circle {  
   font-size: 31px;
   width: 55px;
   height: 55px;
@@ -228,15 +219,15 @@ header p {
   transition: background 0.3s ease-in-out;
   color: white;
   border: 3px solid white;
-  border-radius: 10% !important; /* 100% lo hace circular al boton este */
+  border-radius: 10% !important; 
   background: transparent;
 }
 
-.btn-circle:focus, .btn-circle:hover { /* Que le pasa al boton cuando lo tocas */
+.btn-circle:focus, .btn-circle:hover { 
   color:  #78BE21;
   outline: none;
    background: rgba(255, 255, 255, 0.3);  
-}     
+}      */
 
 .content-section {
   margin: 0;
@@ -327,19 +318,13 @@ img {
   transform: scale(1.2);
 }
 
-
+/* 
 #sigla{
   margin:0;
   font-size: 220px;
 
-}
+} */
 
-
-.portada{
-
-  background-color: #78BE21;
-
-}
 
 .grid-container {
   display: grid;
@@ -449,9 +434,6 @@ font-size: 20px;
   transition: .5s;
   transform: translateY(1em);
   margin: 10px;
-
-  /* text-align: justify; */
-  /* text-justify: inter-word; */
 }
 
 .grid-item:hover .img-descripcion {
@@ -461,10 +443,24 @@ font-size: 20px;
 /* footer*/
 
 
+footer {
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
 .social-footer-container {
-  position: relative;
-  height: 100%;
-  border-collapse: collapse;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .social-footer{
@@ -485,3 +481,139 @@ font-size: 20px;
   font-size: 20px
 }
 
+
+#sec-ind-0{
+  margin:0;
+  background-color: grey;
+  border: 5px solid green;
+}
+
+header {
+  position: relative;
+  margin-top:-10%;
+  height: 20%;
+  background-color: transparent;
+  }
+
+header a{
+  color: white;
+}
+
+
+/* navbar */
+
+header h1{
+  color: #919D9D;
+  font-weight: 500;
+  font-size: 62 px;
+  }
+
+
+header h1 span{
+  color: #78BE21;
+  
+}
+
+#home-img{
+  width: 35px;
+  height: 35px;
+}
+
+.nav {
+  margin-top: 25px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  border: 3px solid hotpink;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#page-top{
+  margin:0;
+}
