@@ -36,14 +36,14 @@ body {
 
 #intro-body {
   height: 200%;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   margin-bottom: -5%;
 } 
 
 #sec-ind-0{
   margin:0;
   background-color: lightgrey;
-  border: 5px solid green;
+  /* border: 5px solid green; */
 }
 
 header {
@@ -63,7 +63,6 @@ header {
 
 #home-img:hover{  
   transition: 0.5s;
-  transform: scale(1.2);
 }
 
 .nav {
@@ -71,7 +70,7 @@ header {
   width: 100%;
   background-color: transparent;
   position: relative;
-  border: 3px solid hotpink;
+  /* border: 3px solid hotpink; */
 }
 
 .nav > .nav-header {
@@ -182,7 +181,7 @@ header .topnav-centered span{
 
 .container{
 
-  border: 3px solid tomato;
+  /* border: 3px solid tomato; */
 
 }
 
@@ -290,7 +289,7 @@ img {
 }
 
 .columna{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   position: relative;
   font-size: 30px;
@@ -309,7 +308,7 @@ img {
 .container-nosotros {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #2196F3;
+  /* background-color: #2196F3; */
   padding: 10px;
 }
 
@@ -317,13 +316,13 @@ img {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
 }
 
 .grid-item {
   padding: 20px;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 10px;
   font-size: 30px;
   text-align: center;
@@ -587,7 +586,7 @@ ul.banner-social-buttons {
 
 /* footer*/
 .social-footer-container {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -605,7 +604,7 @@ ul.banner-social-buttons {
       text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     bottom: 0;
 }
 
