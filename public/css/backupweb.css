@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-html { height: 100%; }
+html { 
+  height: 100%; 
+}
 
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -15,38 +17,174 @@ body {
   font-size: 20px;
 }
 
+.content-section {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+/******* PORTADA ********/
+
+#intro-body {
+  height: 200%;
+  border: 2px solid purple;
+  margin-bottom: -5%;
+} 
+
+#sec-ind-0{
+  margin:0;
+  background-color: lightgrey;
+  border: 5px solid green;
+}
+
+header {
+  position: relative;
+  margin-top: -5%;
+  height: 20%;
+  background-color: transparent;
+  }
+
+
+/* navbar */
+
+#home-img{
+  width: 35px;
+  height: 35px;
+}
+
+#home-img:hover{  
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.nav {
+  margin-top: 25px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  border: 3px solid hotpink;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.topnav-centered h1{
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .topnav-centered h1{
+  color: #919D9D;
+  font-weight: 500;
+  font-size: 70px;
+  }
+
+header .topnav-centered span{
+  color: #78BE21;
+  
+}
+
+/*  */
+
 .container{
 
   border: 3px solid tomato;
 
 }
-
-
-.column-1 {
-  float: left;
-  width: 80%;
-  padding: 10px;
-  height: 240px; 
-  font-size: 50px;
-  background-color: white;
-  border: 1px solid black;
-}
-
-.column-2 {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  height: 240px;
-  font-size: 30px;
-  
-  margin:0;
-  text-align: justify;
-  text-justify: inter-word;
-
-  background-color: white;
-  border: 1px solid black;
-}
-
 
 
 h2,
@@ -56,13 +194,12 @@ h5,
 h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
-  margin: 0 0 35px; /* Margen de cada seccion la pag */
+  margin: 0 0 35px; 
   letter-spacing: 1px;
-  text-transform: uppercase; /* Titulos en mayus */
 }
 
 p {
-  font-size: 16px; /* Tamanio de texto en párrafos */
+  font-size: 16px; 
   line-height: 1.5;
   margin: 0 0 20px;
 }
@@ -85,11 +222,6 @@ a:focus, a:hover {
   color: black;
 }
 
-#intro-body {
-  height: 200%;
-  border: 2px solid purple;
-  margin-bottom: -5%;
-} 
 
 header p {
   font-size: 28px;
@@ -111,21 +243,6 @@ header p {
   }
   header p {
     font-size: 22px; 
-  }
-}
-
-.content-section {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -273,150 +390,143 @@ font-size: 20px;
   transform: translateY(0);
 }
 
-/******* PORTADA ********/
-
-#sec-ind-0{
-  margin:0;
-  background-color: lightgrey;
-  border: 5px solid green;
+/*********** seccion lo que hacemos  *****************/
+.wrapper {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
 }
-
-header {
-  position: relative;
-  margin-top: -5%;
-  height: 20%;
-  background-color: transparent;
-  }
-
-
-/* navbar */
-
-#home-img{
-  width: 35px;
-  height: 35px;
-}
-
-#home-img:hover{  
-  transition: 0.5s;
-  transform: scale(1.2);
-}
-
-.nav {
-  margin-top: 25px;
-  width: 100%;
+.one {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  border: 2px solid black;
+  text-align: left;
   background-color: transparent;
   position: relative;
-  border: 3px solid hotpink;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: white;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}
-
-#page-top{
-  margin:0;
-}
-
-.topnav-centered h1{
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-header .topnav-centered h1{
-  color: #919D9D;
-  font-weight: 500;
-  font-size: 70px;
-  }
-
-header .topnav-centered span{
-  color: #78BE21;
   
 }
+.two {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  border: 2px solid black;
+  text-align: left;
+  background-color: transparent;
+  position: relative;
+}
+.three { 
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  border: 2px solid black;
+  text-align: left;
+  background-color: transparent;
+  position: relative;
+}
+.four {
+  grid-column: 3;
+  grid-row: 2 / 4;
+  border: 2px solid black;
+  text-align: left;
+  background-color: transparent;
+  position: relative;
+}
+.five {
+  grid-column: 1 / 4;
+  grid-row: 4;
+  border: 2px solid black;
+  text-align: left;
+  background-color: transparent;
+  position: relative;
+}
 
+.btn-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.title{
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper > div > div > h3{
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: .25em;
+  font-size: 23px;
+}
+
+.one .grid-hover{
+  transform: translateY(-10%) translateX(-1%);
+}
+
+.two .grid-hover{
+  transform: translateY(-5%) translateX(-3%);
+}
+
+.three .grid-hover{
+  transform: translateY(-5%) translateX(-3%);
+}
+
+.four .grid-hover{
+  transform: translateY(-5%) translateX(-3%);
+}
+
+.five .grid-hover{
+  transform: translateY(-10%) translateX(-1%);
+}
+
+.one:hover{
+border: 2px dashed black;
+}
+
+.two:hover{
+  border: 2px dashed black;
+}
+
+.three:hover{
+  border: 2px dashed black;
+}
+
+.four:hover{
+  border: 2px dashed black;
+}
+
+.five:hover{
+  border: 2px dashed black;
+}
+
+.grid-hover{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0%;
+z-index: 2;
+opacity: 0;
+text-align: center;
+-webkit-transition:all 0.3s ease-in;
+-moz-transition:all 0.3s ease-in;
+-o-transition:all 0.3s ease-in;
+transition:all 0.3s ease-in;
+background-color: lightgrey;
+border: 2px solid lightgrey;
+}
+
+.text{
+  margin: 15px;
+}
+
+.text p{
+  font-size: 21px;
+}
+
+.grid-hover:hover{
+opacity: 1;
+
+}
 
 
 /******* seccion contacto ******/
@@ -426,8 +536,13 @@ header .topnav-centered span{
 
 }
 
+#sec-ind-4 p{
+  font-size: 25px;
+  color: blue;
+}
+
 .btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
@@ -436,7 +551,7 @@ header .topnav-centered span{
 
 .btn-default {
   color: green;
-  border: 1px solid green;
+  border: 1px solid black;
   background-color: transparent;
 }
 
