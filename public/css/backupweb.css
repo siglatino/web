@@ -272,6 +272,12 @@ header .topnav-centered span{
 }
 
 
+.quienes-somos-pic {
+  border-radius: 70%;
+  width: 70px;
+  margin: 5px;
+  transition: 0.5s;
+}
 
 h2,
 h3,
