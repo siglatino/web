@@ -1,108 +1,41 @@
-//current position
-var pos = 0;
-//number of slides
-var totalSlides = $('#slider-wrap ul li').length;
-//get the slide width
-var sliderWidth = $('#slider-wrap').width();
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide")
+const dots = document.querySelectorAll('.dot')
 
-
-$(document).ready(function(){
-	
-	
-	/*****************
-	 BUILD THE SLIDER
-	*****************/
-	//set width to be 'x' times the number of slides
-	$('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
-	
-    //next slide 	
-	$('#next').click(function(){
-		slideRight();
-	});
-	
-	//previous slide
-	$('#previous').click(function(){
-		slideLeft();
-	});
-	
-	
-	
-	/*************************
-	 //*> OPTIONAL SETTINGS
-	************************/
-	//automatic slider
-	var autoSlider = setInterval(slideRight, 3000);
-	
-	//for each slide 
-	$.each($('#slider-wrap ul li'), function() { 
-	   //set its color
-	   var c = $(this).attr("data-color");
-	   $(this).css("background",c);
-	   
-	   //create a pagination
-	   var li = document.createElement('li');
-	   $('#pagination-wrap ul').append(li);	   
-	});
-	
-	//counter
-	countSlides();
-	
-	//pagination
-	pagination();
-	
-	//hide/show controls/btns when hover
-	//pause automatic slide when hover
-	$('#slider-wrap').hover(
-	  function(){ $(this).addClass('active'); clearInterval(autoSlider); }, 
-	  function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 3000); }
-	);
-	
-	
-
-});//DOCUMENT READY
-	
-
-
-/***********
- SLIDE LEFT
-************/
-function slideLeft(){
-	pos--;
-	if(pos==-1){ pos = totalSlides-1; }
-	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
-	
-	//*> optional
-	countSlides();
-	pagination();
+const init = (n) => {
+  slides.forEach((slide, index) => {
+    slide.style.display = "none"
+    dots.forEach((dot, index) => {
+      dot.classList.remove("active")
+    })
+  })
+  slides[n].style.display = "block"
+  dots[n].classList.add("active")
+}
+document.addEventListener("DOMContentLoaded", init(currentSlide))
+const next = () => {
+  currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+  init(currentSlide)
 }
 
-
-/************
- SLIDE RIGHT
-*************/
-function slideRight(){
-	pos++;
-	if(pos==totalSlides){ pos = 0; }
-	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
-	
-	//*> optional 
-	countSlides();
-	pagination();
+const prev = () => {
+  currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+  init(currentSlide)
 }
 
+document.querySelector(".next").addEventListener('click', next)
+
+document.querySelector(".prev").addEventListener('click', prev)
 
 
-	
-/************************
- //*> OPTIONAL SETTINGS
-************************/
-function countSlides(){
-	$('#counter').html(pos+1 + ' / ' + totalSlides);
-}
+setInterval(() => {
+  next()
+}, 5000);
 
-function pagination(){
-	$('#pagination-wrap ul li').removeClass('active');
-	$('#pagination-wrap ul li:eq('+pos+')').addClass('active');
-}
-		
-	
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    console.log(currentSlide)
+    init(i)
+    currentSlide = i
+  })
+})
