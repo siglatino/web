@@ -45,12 +45,11 @@ body {
 #sec-ind-0{
   margin:0;
   background-color: lightgrey;
-  /* border: 5px solid green; */
 }
 
 header {
   position: relative;
-  margin-top: -5%;
+  margin-top: 0;
   height: 20%;
   background-color: transparent;
   }
@@ -59,20 +58,18 @@ header {
 /* navbar */
 
 #home-img{
-  width: 35px;
-  height: 38px;
+  height: 29px;
+  width: 20px;
 }
 
-#home-img:hover{  
-  transition: 0.5s;
-}
 
 .nav {
   margin-top: 5px;
-  width: 100%;
+  width: 470px;
   background-color: white;
   position: relative;
-  /* border: 3px solid hotpink; */
+  border: 3px solid green;
+  margin: 5px 5px 5px 5px;
 }
 
 .nav > .nav-header {
@@ -81,9 +78,10 @@ header {
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 22px;
   color: #fff;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+  border: 3px solid red;
+  vertical-align: middle;
 }
 
 .nav > .nav-btn {
@@ -93,15 +91,15 @@ header {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 20px;
+  border: 3px solid hotpink;
 }
 
 .nav > .nav-links > a:hover {
@@ -158,27 +156,41 @@ header {
     overflow-y: auto;
   }
 }
-
-.topnav-centered h1{
+/* 
+.logo-sigla{
   float: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+*/
 
-header .topnav-centered h1{
-  color: #919D9D;
-  font-weight: 500;
-  font-size: 70px;
-  margin-top: .2%;
-  }
-
-header .topnav-centered span{
-  color: #78BE21;
-  
+.logo-sigla{
+  position: relative;
+  width: 200px;
+  height: 170px;
+  border: 1px solid red;
+  margin: auto;
+  /* display: inline-block; */
 }
 
+.logo-sigla h1{
+  color: #919D9D;
+  font-weight: 500;
+  font-size: 75px;
+  margin: 6px;
+  }
+
+.logo-sigla .active span{
+  color: #78BE21;
+}  
+
+.svgCircleI{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 /* slider */
 .slide-container .prev,
@@ -222,24 +234,27 @@ header .topnav-centered span{
 .dots-container .dot {
   cursor: pointer;
   margin: 5px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   color: #333;
   border-radius: 50%;
   background-color: #dfd6ce;
 }
 
 .dots-container .dot.active {
-  border: 2px solid green;
+  border: 2px solid black;
 }
 
 .slide-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 450px;
   max-width: 1000px;
-  margin: auto;
+  margin: 20px auto;
   position: relative;
+  border: 2px solid red;
+  z-index: 10
 }
 
 .slide-container .slide {

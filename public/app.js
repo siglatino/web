@@ -12,6 +12,7 @@ const init = (n) => {
   slides[n].style.display = "block"
   dots[n].classList.add("active")
 }
+
 document.addEventListener("DOMContentLoaded", init(currentSlide))
 const next = () => {
   currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
