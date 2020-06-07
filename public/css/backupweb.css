@@ -68,7 +68,7 @@ header {
   width: 470px;
   background-color: white;
   position: relative;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   margin: 5px 5px 5px 5px;
 }
 
@@ -80,7 +80,7 @@ header {
   display: inline-block;
   color: #fff;
   padding: 5px 5px 5px 5px;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   vertical-align: middle;
 }
 
@@ -99,7 +99,7 @@ header {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  border: 3px solid hotpink;
+  /* border: 3px solid hotpink; */
 }
 
 .nav > .nav-links > a:hover {
@@ -156,23 +156,26 @@ header {
     overflow-y: auto;
   }
 }
-/* 
-.logo-sigla{
+
+
+#logo-wrapper{
+  width: 350px;
+  height: 130px;
   float: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 2.5%;
+  left: 55%;
   transform: translate(-50%, -50%);
+  margin: auto;
+  /* border: 1px solid blue; */
 }
-*/
 
 .logo-sigla{
   position: relative;
-  width: 200px;
-  height: 170px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  width: 190px;
   margin: auto;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .logo-sigla h1{
@@ -191,6 +194,22 @@ header {
   bottom: 0;
   left: 0;
 }
+
+.logo-descripcion {
+  vertical-align:top;
+  display: inline-block;
+  /* border: 1px solid green; */
+  width: 150px;
+  margin: 20px 0 20px -15px; 
+}
+.logo-descripcion p{
+	text-align: justify;
+  text-align-last: justify;
+	display: inline-block;
+  margin: 0;
+  color: #919D9D;
+}
+
 
 /* slider */
 .slide-container .prev,
@@ -249,7 +268,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 380px;
   max-width: 1000px;
   margin: 20px auto;
   position: relative;
