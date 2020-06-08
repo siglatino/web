@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 html { 
@@ -34,14 +33,6 @@ body {
 
 /******* PORTADA ********/
 
-#intro-body {
-  height: 600px;
-  /* border: 2px solid purple; */
-  margin: auto;
-  margin-bottom: -50px;
-  width: 1200px;
-} 
-
 #sec-ind-0{
   margin:0;
   background-color: lightgrey;
@@ -61,7 +52,6 @@ header {
   height: 29px;
   width: 20px;
 }
-
 
 .nav {
   margin-top: 5px;
@@ -794,44 +784,215 @@ ul.banner-social-buttons {
   width: 20px;
 }
 
+/************ RESPONSIVENESS *****************/
 
-/* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait){
-  /* some CSS here */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  
+  /* LOGO */
+  #logo-wrapper{ width: 360px; height: 150px; top: 5%; left: 0; transform: translate(0, -50%); }
+  
+  .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
+  
+  .logo-sigla h1{ font-size: 79px;  margin: 2px;  }
+  
+  .logo-descripcion { width: 110px;  margin: 2px 0 2px -1px; }
+
+  .logo-descripcion p{ font-size: 20px; }
+  
+  /* SLIDER */
+  input.set { display:none; }
+    
+  #slides { margin:20px auto; width:80%; position:relative; }
+  
+  #slides .mask { width:80%; overflow:hidden; margin:auto; }
+  
+  #slides .overflow { width:400%; }
+  
+  #slides .slide { width:25%; height:300px; line-height:200px; float:left; background:transparent; border-radius: 10px 10px 10px 10px }
+  
+  #center-cropped-1 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
+  
+  #center-cropped-2 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
+  
+  #center-cropped-3 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
+  
+  #center-cropped-4 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url('https://images2.alphacoders.com/103/1039991.jpg');}
+  
+  #controls { width:100%; }
+  
+  #controls label { display:none; width:2%; height:20px; opacity:0.3; position:absolute; top:50%; margin-top:-30px; cursor:pointer; background:transparent; }
+  
+  #controls label:hover { opacity:0.8; }
+  
+  .arrow {width:20px; background-color: transparent;}
+
+
+  /* SECCION 2 */
+
+  .grid-container { height: 100%; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 120px); grid-gap: 65px; margin: 0 auto;}
+  
+  .grid-container .columna{ text-align: center; position: relative; font-size: 8px; width: 330px; height: 100px; margin-top:-50px; }
+  
+  .grid-container .columna .face { width: 330px; height: 120px; border-radius: 2px 2px 2px 2px }
+  
+  .grid-container .columna .face.face1 { transform: translateY(60px); }
+  
+  .grid-container .columna:hover .face.face1{ transform: translateY(0px); border-radius: 2px 2px 2px 2px }
+  
+  .grid-container .columna .face.face2 {padding: 2px; transform: translateY(-60px); border-radius: 2px 2px 2px 2px }
+  
+  .grid-container .columna:hover .face.face2{ transform: translateY(0); }
+  
+  .grid-container .columna .face.face2 .contenido p { margin: 0; padding: 0; }
+  
+  .grid-container .columna .face.face2 .contenido h3 { margin: 0; padding: 0; font-size: 8px; } 
+
+  .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 80px);}  
+
+ 
+  .quienes-somos-pic { border-radius: 70%; width: 70px; height: 70px; margin: 1px;}
+
+  /* SECCION 3 */
+  
+  .container-nosotros-seccion { display: grid; grid-template-columns: auto auto; padding: 2px; margin: 0 -15px}
+  
+.container-nosotros-seccion  .grid-item { position: relative; height: 250px; width: 175px; padding: 2px; text-align: center; }
+  
+  .flag { width: 15px; }
+  
+  .section-2 a{ font-size: 18px; margin-left: 2px;}
+  
+  .section-2 h3{ font-size: 25px; margin-top: 25px; margin-bottom: 20px;}
+  
+  .section-2 p{ font-size: 15px;}
+  
+  .img-descripcion-container { top: 20%; bottom: 14%; left: 2.5%; right: 2.5%; transition: opacity .5s, visibility .2s; border-radius: 10px 10px 10px 10px }
+  
+  .grid-item:hover .img-descripcion-container { opacity: .9; margin: 2px; }
+  
+  .img-descripcion { transform: translateY(1em); margin: 1px; }
+  
+  .profile-pic { border-radius: 90%; width: 110px; height: 110px; margin:0}
+ 
+  /* SECCION 4 */
+
+  .wrapper { height: 450px; width: 340px; grid-gap: 8px; grid-auto-rows: minmax(100px, auto); }
+
+  .btn-icon{ width: 28px; height: 28px;}
+
+  .wrapper > div > div > h3{ font-weight: bold; letter-spacing: 1px; margin: .25em; font-size: 20px; }
+
+  .text{ margin: 3px; }
+
+  .text p{ font-size: 14px; }
+
+  /* FOOTER */
+  .social-footer-container { height: 220px; width: 100%; }
+
 }
 
-/* #### Mobile Phones Landscape #### */
-@media screen and (max-device-width: 640px) and (orientation: landscape){
-  /* some CSS here */
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /* Styles */
 }
 
-/* #### Mobile Phones Portrait or Landscape #### */
-@media screen and (max-device-width: 640px){
-  /* some CSS here */
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  /* Styles */
 }
 
-/* #### iPhone 4+ Portrait or Landscape #### */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-  /* some CSS here */
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
 }
 
-/* #### iPhone 5 Portrait or Landscape #### */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-  /* some CSS here */
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
 }
 
-/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
-  /* some CSS here */
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
 }
 
-/* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-  /* some CSS here */
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) and (max-width : 1823px)  {
+
+  /* NAVBAR */
+#home-img{ height: 25px; width: 20px; }
+
+.nav { margin-top: 5px; width: 390px; margin: 5px 5px 5px 5px; border-radius: 10px 10px 10px 10px; }
+
+.nav > .nav-header > .nav-title { padding: 5px 5px 5px 5px; }
+
+.nav > .nav-links > a { padding: 10px 5px 10px 5px; font-size: 18px; }
+
+  /* ICONO */
+
+#logo-wrapper{ width: 430px; height: 190px; top: 3%; left: 55%; transform: translate(-50%, -50%); margin: auto; }
+
+.logo-sigla{ width: 230px; margin: 0; }
+
+.logo-sigla h1{ font-weight: 500; font-size: 85px; margin: 6px;}
+
+.logo-descripcion { width: 170px; margin: 0 0 0 -15px; }
+
+.logo-descripcion p{ margin: 0; font-size: 24px; }
+
+  /* slider */
+
+#slides { margin: 50px auto; width:80%; transform: translate(0, 5%);}
+
+#slides .mask { width:80%;}
+
+.arrow {width: 40px; }
+
 }
 
-/* #### Desktops #### */
-@media screen and (min-width: 1024px){
-  /* some CSS here */
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  /* Styles esta es la mia!*/ 
 }
 
+/* iPhone 4 - 5s ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media
+only screen and (max-device-width: 667px) 
+only screen and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width : 414px) only screen and (-webkit-device-pixel-ratio: 3) {
+  /*** You've spent way too much on a phone ***/
+}
+
+/* Samsung Galaxy S7 Edge ----------- */
+@media only screen
+and (-webkit-min-device-pixel-ratio: 3), 
+and (min-resolution: 192dpi) and (max-width:640px) {
+ /* Styles */
+}
