@@ -70,6 +70,7 @@ header {
   position: relative;
   /* border: 3px solid green; */
   margin: 5px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px
 }
 
 .nav > .nav-header {
@@ -267,6 +268,7 @@ input.set { display:none; }
   width: 300px;
   height: 230px;
   transition: 0.5s;
+  border-radius: 10px 10px 10px 10px
 }
 
 .grid-container .columna .face.face1 {
@@ -283,8 +285,8 @@ input.set { display:none; }
 .grid-container .columna:hover .face.face1{
   background-color: #A0D163;
   background-color: darkgrey;
-  
   transform: translateY(0px);
+  border-radius: 10px 10px 10px 10px
 }
 
 .grid-container .columna .face.face1 .contenido {
@@ -305,6 +307,7 @@ input.set { display:none; }
   padding: 20px;
   box-sizing: border-box;
   transform: translateY(-115px);
+  border-radius: 10px 10px 10px 10px
 }
 
 .grid-container .columna:hover .face.face2{
@@ -328,7 +331,6 @@ input.set { display:none; }
 
 .grid-container .columna .face.face2 .contenido .container-nosotros .grid-item {
   color: #414141;
-
 }
 
 .quienes-somos-pic {
@@ -486,6 +488,7 @@ img {
   align-items: center;
   justify-content: center;
   transition: opacity .5s, visibility .2s;
+  border-radius: 10px 10px 10px 10px
 }
 
 .grid-item:hover .img-descripcion-container {
@@ -533,7 +536,7 @@ img {
   text-align: left;
   background-color: transparent;
   position: relative;
-  
+  border-radius: 10px 10px 10px 10px
 }
 .two {
   grid-column: 1;
@@ -542,6 +545,7 @@ img {
   text-align: left;
   background-color: transparent;
   position: relative;
+  border-radius: 10px 10px 10px 10px
 }
 .three { 
   grid-column: 2 / 3;
@@ -550,6 +554,7 @@ img {
   text-align: left;
   background-color: transparent;
   position: relative;
+  border-radius: 10px 10px 10px 10px
 }
 .four {
   grid-column: 3;
@@ -558,6 +563,7 @@ img {
   text-align: left;
   background-color: transparent;
   position: relative;
+  border-radius: 10px 10px 10px 10px
 }
 .five {
   grid-column: 1 / 4;
@@ -566,6 +572,7 @@ img {
   text-align: left;
   background-color: transparent;
   position: relative;
+  border-radius: 10px 10px 10px 10px
 }
 
 .btn-icon{
@@ -607,22 +614,27 @@ img {
 
 .one:hover{
 border: 2px dashed black;
+border-radius: 10px 10px 10px 10px
 }
 
 .two:hover{
   border: 2px dashed black;
+  border-radius: 10px 10px 10px 10px
 }
 
 .three:hover{
   border: 2px dashed black;
+  border-radius: 10px 10px 10px 10px
 }
 
 .four:hover{
   border: 2px dashed black;
+  border-radius: 10px 10px 10px 10px
 }
 
 .five:hover{
   border: 2px dashed black;
+  border-radius: 10px 10px 10px 10px
 }
 
 .grid-hover{
@@ -639,6 +651,7 @@ text-align: center;
 transition:all 0.3s ease-in;
 background-color: lightgrey;
 border: 2px solid lightgrey;
+border-radius: 10px 10px 10px 10px
 }
 
 .text{
