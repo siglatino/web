@@ -160,29 +160,28 @@ header {
 
 
 #logo-wrapper{
-  width: 350px;
-  height: 130px;
+  width: 450px;
+  height: 190px;
   float: none;
   position: absolute;
-  top: 2.5%;
+  top: 3%;
   left: 55%;
   transform: translate(-50%, -50%);
   margin: auto;
-  /* border: 1px solid blue; */
+  /* border: 1px solid blue;  */
 }
 
 .logo-sigla{
   position: relative;
-  /* border: 1px solid red; */
-  width: 190px;
-  margin: auto;
+  width: 270px;
+  margin: 0;
   display: inline-block;
 }
 
 .logo-sigla h1{
   color: #919D9D;
   font-weight: 500;
-  font-size: 75px;
+  font-size: 100px;
   margin: 6px;
   }
 
@@ -208,8 +207,8 @@ header {
 	display: inline-block;
   margin: 0;
   color: #919D9D;
+  font-size: 24px;
 }
-
 
 /* slider */
 input.set { display:none; }
