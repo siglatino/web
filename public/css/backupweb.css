@@ -191,8 +191,7 @@ header {
 }  
 
 .svgCircleI{
-  position: absolute;
-  bottom: 0;
+  position: absolute;  bottom: 0;
   left: 0;
 }
 
@@ -226,7 +225,15 @@ input.set { display:none; }
 
 #slides .overflow { width:400%; -webkit-transform:translateZ(0); -webkit-transition:all 0.5s ease-out; -moz-transition:all 0.5s ease-out; -o-transition:all 0.5s ease-out; transition:all 0.5s ease-out; }
 
-#slides .slide { width:25%; height:500px; line-height:200px; float:left; background:#fff; }
+#slides .slide { width:25%; height:500px; line-height:200px; float:left; background:transparent; border-radius: 10px 10px 10px 10px }
+
+#center-cropped-1 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
+
+#center-cropped-2 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
+
+#center-cropped-3 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
+
+#center-cropped-4 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url('https://images2.alphacoders.com/103/1039991.jpg');}
 
 #controls { width:100%; }
 
