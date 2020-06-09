@@ -756,7 +756,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
   
   /* LOGO */
-  #logo-wrapper{ width: 360px; height: 150px; top: 5%; left: 0; transform: translate(0, -50%); }
+  #logo-wrapper{ width: 360px; height: 150px; top: 5%; left: 0; transform: translate(50%, -50%); }
   
   .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
   
