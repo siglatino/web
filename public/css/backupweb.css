@@ -756,7 +756,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
   
   /* LOGO */
-  #logo-wrapper{ position: relative; width: 360px; height: 150px; top: 5%; margin: 0 auto 0 auto; border: 2px solid red}
+  #logo-wrapper{ position: relative; width: 360px; height: 150px; top: 5%; margin: 0 auto 0 auto;}
   
   .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
   
@@ -944,15 +944,15 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 
    /* LOGO */
-   #logo-wrapper{ width: 320px; height: 130px; top: 6%; left: 0; transform: translate(0, -50%); }
-  
+   #logo-wrapper{ position: relative; width: 320px; height: 130px; top: 10%; margin: 0 auto 0 auto}
+
    .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
    
    .logo-sigla h1{ font-size: 79px;  margin: 2px;  }
    
-   .logo-descripcion { width: 110px;  margin: 2px 0 2px -1px; }
+   .logo-descripcion { width: 100px;  margin: 2px 0 2px -35px; }
  
-   .logo-descripcion p{ font-size: 18px; }
+   .logo-descripcion p{ font-size: 15px; }
    
    /* SLIDER */
    input.set { display:none; }
