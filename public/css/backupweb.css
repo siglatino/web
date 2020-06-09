@@ -24,13 +24,6 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-
 /******* PORTADA ********/
 
 #sec-ind-0{
@@ -58,7 +51,6 @@ header {
   width: 470px;
   background-color: white;
   position: relative;
-  /* border: 3px solid green; */
   margin: 5px 5px 5px 5px;
   border-radius: 10px 10px 10px 10px
 }
@@ -71,7 +63,6 @@ header {
   display: inline-block;
   color: #fff;
   padding: 5px 5px 5px 5px;
-  /* border: 3px solid red; */
   vertical-align: middle;
 }
 
@@ -90,7 +81,6 @@ header {
   text-decoration: none;
   color: black;
   font-size: 20px;
-  /* border: 3px solid hotpink; */
 }
 
 .nav > .nav-links > a:hover {
@@ -103,6 +93,15 @@ header {
 }
 
 @media (max-width:600px) {
+
+.nav {
+  background-color: transparent;
+}
+
+.nav > .nav-header > .nav-title {
+  background-color: #fff;
+  border-radius: 8px;
+}
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -117,12 +116,13 @@ header {
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 3px solid #eee;
   }
   .nav > .nav-links {
     position: absolute;
@@ -143,8 +143,9 @@ header {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    height: calc(40vh - 50px);
     overflow-y: auto;
+    border-radius: 8px;
   }
 }
 
@@ -158,7 +159,6 @@ header {
   left: 55%;
   transform: translate(-50%, -50%);
   margin: auto;
-  /* border: 1px solid blue;  */
 }
 
 .logo-sigla{
@@ -354,14 +354,6 @@ p {
   margin: 0 0 20px;
 }
 
-@media (min-width: 768px) {
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 0 35px;
-  }
-}
-
 header p {
   font-size: 28px;
 }
@@ -370,19 +362,6 @@ header p {
   background: rgba(0, 0, 0, 0); 
   border-radius: 15px;  
   text-shadow: 3px 3px 8px transparent; 
-}
-
-@media (min-width: 768px) {
-  header {
-    height: 100%; 
-    padding: 100;
-  }
-  header h1 {
-    font-size: 100px;
-  }
-  header p {
-    font-size: 22px; 
-  }
 }
 
 ::selection {
@@ -405,15 +384,11 @@ img {
 
 /**************** Seccion NOSOTROS **********************/
 
-.container-sec-2{
-  position: relative;
-  margin: 20px;
-}
+.container-sec-2{ position: relative; margin: 20px; }
 
 .container-nosotros {
   display: grid;
   grid-template-columns: auto auto;
-  /* background-color: #2196F3; */
   padding: 10px;
 }
 
@@ -421,20 +396,16 @@ img {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
 }
 
 .grid-item {
   position: relative;
-  /* border: 1px solid red; */
   padding: 10px;
   font-size: 30px;
   text-align: center;
 }
 
-.flag {
-  width: 30px;
-}
+.flag { width: 30px;}
 
 /* Icons nosotros */
 .fab {
@@ -443,9 +414,7 @@ img {
   font-size: 20px;
 }
 
-.fab:hover{
-  color: white;
-}
+.fab:hover{ color: white; }
 
 .section-2{
   background-color: lightgrey;
@@ -488,7 +457,6 @@ img {
 }
 
 .grid-item:hover .img-descripcion-container {
-
   visibility: visible;
   opacity: .9;
   margin: 20px;
@@ -688,7 +656,6 @@ opacity: 1;
   color: #78BE21;
 }
 
-
 #sec-ind-4 img{
   width: 20px;
 }
@@ -744,7 +711,6 @@ ul.banner-social-buttons {
 
 /* footer*/
 .social-footer-container {
-  /* border: 2px solid orange; */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -755,15 +721,13 @@ ul.banner-social-buttons {
 
 .social-footer{
   position: absolute;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-      text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* border: 2px solid black; */
-    bottom: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
 }
 
 .social-footer h2{
@@ -852,20 +816,19 @@ and (max-device-width : 480px) {
 
   .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 80px);}  
 
- 
   .quienes-somos-pic { border-radius: 70%; width: 70px; height: 70px; margin: 1px;}
 
   /* SECCION 3 */
   
-  .container-nosotros-seccion { display: grid; grid-template-columns: auto auto; padding: 2px; margin: 0 -15px}
+  .container-nosotros-seccion { display: grid; grid-template-columns: repeat(2, 50wh); margin:auto }
   
-.container-nosotros-seccion  .grid-item { position: relative; height: 250px; width: 175px; padding: 2px; text-align: center; }
+  .container-nosotros-seccion .grid-item { position: relative; height: 250px; width: 180px; padding: 1px; text-align: center; margin:auto; margin-bottom: 10px; }
   
-  .flag { width: 15px; }
+  .container-nosotros-seccion .grid-item .flag { width: 15px; }
   
-  .section-2 a{ font-size: 18px; margin-left: 2px;}
+  .container-nosotros-seccion .grid-item a{ font-size: 18px; margin-left: 2px; }
   
-  .section-2 h3{ font-size: 25px; margin-top: 25px; margin-bottom: 20px;}
+  .container-nosotros-seccion .grid-item h3{ font-size: 18px; letter-spacing: 0.25px }
   
   .section-2 p{ font-size: 15px;}
   
@@ -875,7 +838,7 @@ and (max-device-width : 480px) {
   
   .img-descripcion { transform: translateY(1em); margin: 1px; }
   
-  .profile-pic { border-radius: 90%; width: 110px; height: 110px; margin:0}
+  .profile-pic { border-radius: 90%; width: 120px; height: 120px; margin:0; }
  
   /* SECCION 4 */
 
@@ -890,8 +853,11 @@ and (max-device-width : 480px) {
   .text p{ font-size: 14px; }
 
   /* FOOTER */
-  .social-footer-container { height: 220px; width: 100%; }
+  .social-footer-container { height: 200px; width: 100%; }
 
+  .social-footer p{ margin: 0; font-size: 15px}
+  
+  .social-footer img{ width: 10px; }
 }
 
 
@@ -927,41 +893,42 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-  /* Styles */
+
+
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) and (max-width : 1823px)  {
 
-  /* NAVBAR */
-#home-img{ height: 25px; width: 20px; }
+    /* NAVBAR */
+  #home-img{ height: 25px; width: 20px; }
 
-.nav { margin-top: 5px; width: 390px; margin: 5px 5px 5px 5px; border-radius: 10px 10px 10px 10px; }
+  .nav { margin-top: 5px; width: 390px; margin: 5px 5px 5px 5px; border-radius: 10px 10px 10px 10px; }
 
-.nav > .nav-header > .nav-title { padding: 5px 5px 5px 5px; }
+  .nav > .nav-header > .nav-title { padding: 5px 5px 5px 5px; }
 
-.nav > .nav-links > a { padding: 10px 5px 10px 5px; font-size: 18px; }
+  .nav > .nav-links > a { padding: 10px 5px 10px 5px; font-size: 18px; }
 
-  /* ICONO */
+    /* ICONO */
 
-#logo-wrapper{ width: 430px; height: 190px; top: 3%; left: 55%; transform: translate(-50%, -50%); margin: auto; }
+  #logo-wrapper{ width: 430px; height: 190px; top: 3%; left: 55%; transform: translate(-50%, -50%); margin: auto; }
 
-.logo-sigla{ width: 230px; margin: 0; }
+  .logo-sigla{ width: 230px; margin: 0; }
 
-.logo-sigla h1{ font-weight: 500; font-size: 85px; margin: 6px;}
+  .logo-sigla h1{ font-weight: 500; font-size: 85px; margin: 6px;}
 
-.logo-descripcion { width: 170px; margin: 0 0 0 -15px; }
+  .logo-descripcion { width: 170px; margin: 0 0 0 -15px; }
 
-.logo-descripcion p{ margin: 0; font-size: 24px; }
+  .logo-descripcion p{ margin: 0; font-size: 24px; }
 
-  /* slider */
+    /* slider */
 
-#slides { margin: 50px auto; width:80%; transform: translate(0, 5%);}
+  #slides { margin: 50px auto; width:80%; transform: translate(0, 5%);}
 
-#slides .mask { width:80%;}
+  #slides .mask { width:80%;}
 
-.arrow {width: 40px; }
+  .arrow {width: 40px; }
 
 }
 
@@ -975,7 +942,116 @@ and (min-width : 1824px) {
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
-  /* Styles */
+
+   /* LOGO */
+   #logo-wrapper{ width: 320px; height: 130px; top: 6%; left: 0; transform: translate(0, -50%); }
+  
+   .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
+   
+   .logo-sigla h1{ font-size: 79px;  margin: 2px;  }
+   
+   .logo-descripcion { width: 110px;  margin: 2px 0 2px -1px; }
+ 
+   .logo-descripcion p{ font-size: 18px; }
+   
+   /* SLIDER */
+   input.set { display:none; }
+     
+   #slides { margin:20px auto; width:80%; position:relative; }
+   
+   #slides .mask { width: 80%; overflow:hidden; margin:auto; }
+   
+   #slides .overflow { width: 400%; }
+   
+   #slides .slide { width:25%; height:200px; line-height:200px; float:left; background:transparent; border-radius: 10px 10px 10px 10px }
+   
+   #center-cropped-1 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
+   
+   #center-cropped-2 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
+   
+   #center-cropped-3 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
+   
+   #center-cropped-4 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url('https://images2.alphacoders.com/103/1039991.jpg');}
+   
+   #controls { width:100%; }
+   
+   #controls label { display:none; width:2%; height:20px; opacity:0.3; position:absolute; top:50%; margin-top:-30px; cursor:pointer; background:transparent; }
+   
+   #controls label:hover { opacity:0.8; }
+   
+   .arrow {width:10px; background-color: transparent;}
+ 
+ 
+   /* SECCION 2 */
+ 
+   .grid-container { height: 100%; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 80px); grid-gap: 55px; margin: 0 auto;}
+   
+   .grid-container .columna{ text-align: center; position: relative; font-size: 8px; width: 300px; height: 80px; margin-top:-30px; }
+   
+   .grid-container .columna .face { width: 300px; height: 80px; border-radius: 2px 2px 2px 2px }
+   
+   .grid-container .columna .face.face1 { transform: translateY(40px); }
+   
+   .grid-container .columna:hover .face.face1{ transform: translateY(0px); border-radius: 2px 2px 2px 2px }
+   
+   .grid-container .columna .face.face2 {padding: 2px; transform: translateY(-40px); border-radius: 2px 2px 2px 2px }
+   
+   .grid-container .columna:hover .face.face2{ transform: translateY(0); }
+   
+   .grid-container .columna .face.face2 .contenido p { margin: 0; padding: 0; font-size: 14px}
+   
+   .grid-container .columna .face.face2 .contenido h3 { margin: 0; padding: 0; font-size: 8px; } 
+ 
+   .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 70px);}  
+  
+   .quienes-somos-pic { border-radius: 70%; width: 65px; height: 65px; margin: 1px;}
+ 
+   /* SECCION 3 */
+   
+   .container-nosotros-seccion { display: grid; grid-template-columns: auto auto; padding: 2px; margin: 100px -20px}
+   
+   .container-nosotros-seccion .grid-item { position: relative; height: 200px; width: 150px; padding: 2px; text-align: center; }
+   
+   .flag { width: 15px; }
+   
+   .section-2 a{ font-size: 15px; margin-left: 2px;}
+   
+   .section-2 h3{ font-size: 20px; margin-top: 10px; margin-bottom: 5px;}
+   
+   .section-2 p{ font-size: 12px;}
+   
+   .img-descripcion-container { top: 20%; bottom: 14%; left: 2.5%; right: 2.5%; transition: opacity .5s, visibility .2s; border-radius: 10px 10px 10px 10px }
+   
+   .grid-item:hover .img-descripcion-container { opacity: .9; margin: 2px; }
+   
+   .img-descripcion { transform: translateY(1em); margin: 1px; }
+   
+   .profile-pic { border-radius: 90%; width: 110px; height: 110px; margin:0}
+  
+   /* SECCION 4 */
+ 
+   .wrapper { height: 320px; width: 300px; grid-gap: 8px; grid-auto-rows: minmax(90px, auto); }
+ 
+   .btn-icon{ width: 25px; height: 25px;}
+ 
+   .wrapper > div > div > h3{ font-weight: bold; letter-spacing: 1px; margin: .25em; font-size: 15px; }
+ 
+   .text{ margin: 3px; }
+ 
+   .text p{ font-size: 12px; }
+ 
+   /* CONTACTO Y FOOTER */
+
+   .social-footer-container { height: 220px; width: 100%; }
+  
+   #sec-ind-4 p{ font-size: 20px; }
+  
+   #sec-ind-4 a{ font-size: 20px; }
+  
+   #sec-ind-4 img{ width: 20px; }
+
+  ul.banner-social-buttons { margin-top: 20px; font-size: 0; }
+
 }
 
 /* iPhone 6 ----------- */
