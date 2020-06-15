@@ -911,7 +911,7 @@ and (min-width : 1224px) and (max-width : 1823px)  {
 
     /* ICONO */
 
-  #logo-wrapper{ width: 430px; height: 120px; top: 3.5%; left: 55%; transform: translate(-50%, -50%); margin: auto; border: 1px solid green; }
+  #logo-wrapper{ width: 430px; height: 120px; top: 3.5%; left: 55%; transform: translate(-50%, -50%); margin: auto; border: 0px solid green; }
 
   .logo-sigla{ width: 230px; margin: 0; }
 
