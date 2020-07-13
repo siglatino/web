@@ -48,7 +48,7 @@ header {
 
 .nav {
   margin-top: 5px;
-  width: 470px;
+  width: 510px;
   background-color: white;
   position: relative;
   margin: 5px 5px 5px 5px;
@@ -257,7 +257,6 @@ input.set { display:none; }
   width: 300px;
   height: 460px;
 }
-
 
 .grid-container .columna .face {
   width: 300px;
@@ -630,32 +629,183 @@ opacity: 1;
 
 }
 
-/******* seccion contacto ******/
-
+/******* seccion proyectos ******/
 #sec-ind-4{
   background-color: lightgrey;
 }
 
-#sec-ind-4 p{
+.wrapper-projects {
+  height: 450px;
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one-project {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/span 1;
+  grid-row: 1;
+  border: 2px solid black;
+  background-color: transparent;
+  position: relative;
+  border-radius: 10px 10px 10px 10px
+}
+.two-project {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/span 1;
+  grid-row: 1;
+  border: 2px solid black;
+  background-color: transparent;
+  position: relative;
+  border-radius: 10px 10px 10px 10px
+}
+.three-project { 
+  display: flex;
+  justify-content: center;
+  grid-column: 3/span 1;
+  grid-row: 1;
+  border: 2px solid black;
+  background-color: transparent;
+  position: relative;
+  border-radius: 10px 10px 10px 10px
+}
+.four-project {
+  display: flex;
+  justify-content: center;
+  grid-column: 4/span 1;
+  grid-row: 1;
+  border: 2px solid black;
+  background-color: transparent;
+  position: relative;
+  border-radius: 10px 10px 10px 10px
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  top: 2%
+}
+
+.wrapper-projects > div > div > h3{
+  font-weight: bold;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  margin: .25em;
+  font-size: 23px;
+}
+
+.one-project:hover{
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px
+}
+
+.two-project:hover{
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px
+}
+
+.three-project:hover{
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px
+}
+
+.four-project:hover{
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px
+}
+
+.wrapper-projects .grid-hover{
+position: absolute;
+width: 100%;
+height: 50%;
+top: 0%;
+z-index: 2;
+opacity: 0;
+text-align: center;
+-webkit-transition:all 0.5s ease-in;
+-moz-transition:all 0.5s ease-in;
+-o-transition:all 0.5s ease-in;
+transition:all 0.5s ease-in;
+background-color: white;
+border: 0px solid lightgrey;
+border-radius: 10px 10px 10px 10px
+}
+
+.wrapper-projects .text{
+  margin: 15px;
+}
+
+.wrapper-projects .text p{
+  font-size: 21px;
+}
+
+.wrapper-projects .grid-hover:hover{
+opacity: 1;
+transform: translateY(100%);
+transition: 1s;
+}
+
+.descripcion-proyectos {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 2%;
+  
+}
+
+.descripcion-proyectos p {
+  font-size: 25px;
+  
+}
+
+.descripcion-proyectos h2 {
+  font-size: 40px;
+  color: #78BE21;
+  
+}
+
+.is-embed {
+	height: 100%;
+	margin-top: -1em;
+}
+.is-embed iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/******* seccion contacto ******/
+
+#sec-ind-5{
+  background-color: #A0D163;
+}
+
+#sec-ind-5 p{
   font-size: 25px;
   color:#414141;
   margin:0
 }
 
-#sec-ind-4 a{
+#sec-ind-5 a{
   font-size: 25px;
   color:#414141;
 }
 
-#sec-ind-4 h2{
+#sec-ind-5 h2{
   color: #78BE21;
+  color: black;
 }
 
-#sec-ind-4 a:hover{
+#sec-ind-5 a:hover{
   color: #78BE21;
+  color: black;
 }
 
-#sec-ind-4 img{
+#sec-ind-5 img{
   width: 20px;
 }
 
@@ -903,7 +1053,7 @@ and (min-width : 1224px) and (max-width : 1823px)  {
     /* NAVBAR */
   #home-img{ height: 25px; width: 20px; }
 
-  .nav { margin-top: 5px; width: 390px; margin: 5px 5px 5px 5px; border-radius: 10px 10px 10px 10px; }
+  .nav { margin-top: 5px; width: 430px; margin: 5px 5px 5px 5px; border-radius: 10px 10px 10px 10px; }
 
   .nav > .nav-header > .nav-title { padding: 5px 5px 5px 5px; }
 
@@ -946,8 +1096,6 @@ and (min-width : 1224px) and (max-width : 1823px)  {
   #slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3), #slide3:checked ~ #controls label:nth-child(4) { right:0; display:block; }
 
   #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) { left:0; display:block; }
-
-
 
   #slides .mask { width:80%;}
 
@@ -1067,11 +1215,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
    .social-footer-container { height: 220px; width: 100%; }
   
-   #sec-ind-4 p{ font-size: 20px; }
+   #sec-ind-5 p{ font-size: 20px; }
   
-   #sec-ind-4 a{ font-size: 20px; }
+   #sec-ind-5 a{ font-size: 20px; }
   
-   #sec-ind-4 img{ width: 20px; }
+   #sec-ind-5 img{ width: 20px; }
 
   ul.banner-social-buttons { margin-top: 20px; font-size: 0; }
 
