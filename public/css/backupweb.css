@@ -724,6 +724,7 @@ opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   z-index: 2;
   opacity: 0;
   -webkit-transition:all 0.5s ease-in;
@@ -758,7 +759,6 @@ transition: 1s;
   flex-direction: column;
   text-align: left;
   margin: 2%;
-  
 }
 
 .descripcion-proyectos p {
@@ -768,7 +768,6 @@ transition: 1s;
 .descripcion-proyectos h2 {
   font-size: 40px;
   color: #78BE21;
-  
 }
 
 .is-embed {
@@ -948,7 +947,7 @@ and (max-device-width : 480px) {
 
   /* SECCION 2 */
 
-  .grid-container { height: 100%; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 120px); grid-gap: 65px; margin: 0 auto;}
+  .grid-container { height: 100%; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 120px); grid-gap: 5px; margin: 0 auto;}
   
   .grid-container .columna{ text-align: center; position: relative; font-size: 8px; width: 330px; height: 100px; margin-top:-50px; }
   
@@ -1028,6 +1027,15 @@ and (max-device-width : 480px) {
   .social-footer p{ margin: 0; font-size: 15px}
   
   .social-footer img{ width: 10px; }
+
+
+  /* Proyectos  */
+
+  .descripcion-proyectos { display: flex; flex-direction: column; text-align: left; margin: 2%; }
+  
+  .descripcion-proyectos p { font-size: 18px; }
+  
+  .descripcion-proyectos h2 { font-size: 22px;  color: #78BE21;}  
 }
 
 
@@ -1121,6 +1129,8 @@ and (min-width : 1224px) and (max-width : 1823px)  {
   #slides .mask { width:80%;}
 
   .arrow {width: 40px; }
+
+
 
 }
 
@@ -1243,7 +1253,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
    #sec-ind-5 img{ width: 20px; }
 
   ul.banner-social-buttons { margin-top: 20px; font-size: 0; }
+    /* Proyectos  */
 
+    .descripcion-proyectos { display: flex; flex-direction: column; text-align: left; margin: 1.5%; }
+  
+    .descripcion-proyectos p { font-size: 15px; }
+    
+    .descripcion-proyectos h2 { font-size: 20px;  color: #78BE21;}  
 }
 
 /* iPhone 6 ----------- */
