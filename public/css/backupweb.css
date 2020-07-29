@@ -688,6 +688,7 @@ opacity: 1;
 .title{
   display: flex;
   flex-direction: column;
+  align-items: center;
   top: 2%
 }
 
@@ -722,10 +723,9 @@ opacity: 1;
 .wrapper-projects .grid-hover{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
   z-index: 2;
   opacity: 0;
-  text-align: center;
   -webkit-transition:all 0.5s ease-in;
   -moz-transition:all 0.5s ease-in;
   -o-transition:all 0.5s ease-in;
@@ -733,6 +733,11 @@ opacity: 1;
   background-color: white;
   border-radius: 10px 10px 10px 10px
 }
+
+.wrapper-projects .grid-hover>*:first-child {
+  align-self: stretch;
+}
+   
 
 .wrapper-projects .text{
   margin: 15px;
@@ -1001,20 +1006,21 @@ and (max-device-width : 480px) {
 
   /* SECCION 5 */
 
-  .wrapper-projects { height: 450px; width: 340px; grid-gap: 8px; grid-template-rows: repeat(3, 1fr); grid-auto-columns: 300px;}
-
+  .wrapper-projects { height: 380px; width: 300px; grid-gap: 8px; grid-template-rows: repeat(3, 1fr); grid-template-columns: 1fr;}
   .one-project { grid-column: 1; grid-row: 1/span 1; }
   .two-project { grid-row: 2/span 1;  grid-column: 1;}
   .three-project { grid-row: 3/span 1; grid-column: 1; }
   .four-project {  grid-row: 4/span 1; grid-column: 1;}
 
-  .wrapper-projects .btn-icon{ width: 28px; height: 28px;}
+  .wrapper-projects .btn{ width: 100px; height: 40px;}
 
   .wrapper-projects > div > div > h3{ font-weight: bold; letter-spacing: 1px; margin: .25em; font-size: 20px; }
 
-  .wrapper-projects .text{ margin: 3px; }
+  .title > img { width: 50px; height: 50px; }
 
-  .wrapper-projects .text p{ font-size: 14px; }
+  .wrapper-projects .text{ margin: 2px; }
+
+  .wrapper-projects .text p{ font-size: 16px; }
   
   /* FOOTER */
   .social-footer-container { height: 200px; width: 100%; }
