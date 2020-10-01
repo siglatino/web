@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-html { 
-  height: 100%; 
+html {
+  height: 100%;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  color: black; 
+  color: black;
   background-color: #A0D163;
   font-size: 20px;
 }
@@ -177,7 +177,7 @@ header {
 
 .logo-sigla .active span{
   color: #78BE21;
-}  
+}
 
 .svgCircleI{
   position: absolute;  bottom: 0;
@@ -188,7 +188,7 @@ header {
   vertical-align:top;
   display: inline-block;
   width: 150px;
-  margin: 20px 0 20px -15px; 
+  margin: 20px 0 20px -15px;
 }
 .logo-descripcion p{
 	text-align: justify;
@@ -217,7 +217,7 @@ input.set { display:none; }
 
 #center-cropped-1 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
 
-#center-cropped-2 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
+#center-cropped-2 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
 
 /* #center-cropped-3 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");} */
 #center-cropped-3 { width: 100%; height: 500px; background-position: center center; background-repeat: no-repeat; background-size: auto 500px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/kHDn4nt/mapa.png");}
@@ -321,7 +321,7 @@ input.set { display:none; }
  font-size: 24px;
   text-align: center;
   color: #414141;
-} 
+}
 
 .grid-container .columna .face.face2 .contenido .container-nosotros .grid-item {
   color: #414141;
@@ -342,12 +342,12 @@ h5,
 h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
-  margin: 0 0 35px; 
+  margin: 0 0 35px;
   letter-spacing: 1px;
 }
 
 p {
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 1.5;
   margin: 0 0 20px;
 }
@@ -357,9 +357,9 @@ header p {
 }
 
 .improve-contrast-box {
-  background: rgba(0, 0, 0, 0); 
-  border-radius: 15px;  
-  text-shadow: 3px 3px 8px transparent; 
+  background: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  text-shadow: 3px 3px 8px transparent;
 }
 
 ::selection {
@@ -440,7 +440,7 @@ img {
 .img-descripcion-container {
   position: absolute;
   top: 15%;
-  bottom: 15%; 
+  bottom: 15%;
   left: 5%;
   right: -5%;
   background-color: #A0D163;
@@ -509,7 +509,7 @@ img {
   position: relative;
   border-radius: 10px 10px 10px 10px
 }
-.three { 
+.three {
   grid-column: 2 / 3;
   grid-row: 2 / 4;
   border: 2px solid black;
@@ -663,7 +663,7 @@ opacity: 1;
   position: relative;
   border-radius: 10px 10px 10px 10px
 }
-.three-project { 
+.three-project {
   display: flex;
   justify-content: center;
   grid-column: 3/span 1;
@@ -738,7 +738,7 @@ opacity: 1;
 .wrapper-projects .grid-hover>*:first-child {
   align-self: stretch;
 }
-   
+
 
 .wrapper-projects .text{
   margin: 15px;
@@ -902,96 +902,96 @@ ul.banner-social-buttons {
 /************ RESPONSIVENESS *****************/
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
-  
+
   /* LOGO */
   #logo-wrapper{ position: relative; width: 360px; height: 150px; top: 5%; margin: 0 auto 0 auto;}
-  
+
   .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
-  
+
   .logo-sigla h1{ font-size: 79px;  margin: 2px;  }
-  
+
   .logo-descripcion { width: 110px;  margin: 2px 0 2px -1px; }
 
   .logo-descripcion p{ font-size: 20px; }
-  
+
   /* SLIDER */
   input.set { display:none; }
-    
+
   #slides { margin:20px auto; width:80%; position:relative; }
-  
+
   #slides .mask { width:80%; overflow:hidden; margin:auto; }
-  
+
   #slides .overflow { width:400%; }
-  
+
   #slides .slide { width:25%; height:300px; line-height:200px; float:left; background:transparent; border-radius: 10px 10px 10px 10px }
-  
+
   #center-cropped-1 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image:url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
-  
-  #center-cropped-2 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
-  
+
+  #center-cropped-2 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
+
   /* #center-cropped-3 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");} */
   #center-cropped-3 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image:url("https://i.ibb.co/kHDn4nt/mapa.png");}
-  
+
   #center-cropped-4 { width: 100%; height: 300px; background-position: center center; background-repeat: no-repeat; background-size: auto 300px; border-radius: 10px 10px 10px 10px; background-image: url('https://i.ibb.co/gMYTyVX/gis-day.jpg');}
-  
+
   #controls { width:100%; }
-  
+
   #controls label { display:none; width:2%; height:20px; opacity:0.3; position:absolute; top:50%; margin-top:-30px; cursor:pointer; background:transparent; }
-  
+
   #controls label:hover { opacity:0.8; }
-  
+
   .arrow {width:20px; background-color: transparent;}
 
 
   /* SECCION 2 */
 
   .grid-container { height: 100%; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 120px); grid-gap: 5px; margin: 0 auto;}
-  
-  .grid-container .columna{ text-align: center; position: relative; font-size: 8px; width: 330px; height: 100px; margin-top:-50px; }
-  
-  .grid-container .columna .face { width: 330px; height: 120px; border-radius: 2px 2px 2px 2px }
-  
-  .grid-container .columna .face.face1 { transform: translateY(60px); }
-  
-  .grid-container .columna:hover .face.face1{ transform: translateY(0px); border-radius: 2px 2px 2px 2px }
-  
-  .grid-container .columna .face.face2 {padding: 2px; transform: translateY(-60px); border-radius: 2px 2px 2px 2px }
-  
-  .grid-container .columna:hover .face.face2{ transform: translateY(0); }
-  
-  .grid-container .columna .face.face2 .contenido p { margin: 0; padding: 0; }
-  
-  .grid-container .columna .face.face2 .contenido h3 { margin: 0; padding: 0; font-size: 8px; } 
 
-  .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 80px);}  
+  .grid-container .columna{ text-align: center; position: relative; font-size: 8px; width: 330px; height: 100px; margin-top:-50px; }
+
+  .grid-container .columna .face { width: 330px; height: 120px; border-radius: 2px 2px 2px 2px }
+
+  .grid-container .columna .face.face1 { transform: translateY(60px); }
+
+  .grid-container .columna:hover .face.face1{ transform: translateY(0px); border-radius: 2px 2px 2px 2px }
+
+  .grid-container .columna .face.face2 {padding: 2px; transform: translateY(-60px); border-radius: 2px 2px 2px 2px }
+
+  .grid-container .columna:hover .face.face2{ transform: translateY(0); }
+
+  .grid-container .columna .face.face2 .contenido p { margin: 0; padding: 0; }
+
+  .grid-container .columna .face.face2 .contenido h3 { margin: 0; padding: 0; font-size: 8px; }
+
+  .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 80px);}
 
   .quienes-somos-pic { border-radius: 70%; width: 70px; height: 70px; margin: 1px;}
 
   /* SECCION 3 */
-  
+
   .container-nosotros-seccion { display: grid; grid-template-columns: repeat(2, 50wh); margin:auto }
-  
+
   .container-nosotros-seccion .grid-item { position: relative; height: 250px; width: 180px; padding: 1px; text-align: center; margin:auto; margin-bottom: 10px; }
-  
+
   .container-nosotros-seccion .grid-item .flag { width: 15px; }
-  
+
   .container-nosotros-seccion .grid-item a{ font-size: 18px; margin-left: 2px; }
-  
+
   .container-nosotros-seccion .grid-item h3{ font-size: 18px; letter-spacing: 0.25px }
-  
+
   .section-2 p{ font-size: 15px;}
-  
+
   .img-descripcion-container { top: 20%; bottom: 14%; left: 2.5%; right: 2.5%; transition: opacity .5s, visibility .2s; border-radius: 10px 10px 10px 10px }
-  
+
   .grid-item:hover .img-descripcion-container { opacity: .9; margin: 2px; }
-  
+
   .img-descripcion { transform: translateY(1em); margin: 1px; }
-  
+
   .profile-pic { border-radius: 90%; width: 120px; height: 120px; margin:0; }
- 
+
   /* SECCION 4 */
 
   .wrapper { height: 450px; width: 340px; grid-gap: 8px; grid-auto-rows: minmax(100px, auto); }
@@ -1021,63 +1021,63 @@ and (max-device-width : 480px) {
   .wrapper-projects .text{ margin: 2px; }
 
   .wrapper-projects .text p{ font-size: 16px; }
-  
+
   /* FOOTER */
   .social-footer-container { height: 200px; width: 100%; }
 
   .social-footer p{ margin: 0; font-size: 15px}
-  
+
   .social-footer img{ width: 10px; }
 
 
   /* Proyectos  */
 
   .descripcion-proyectos { display: flex; flex-direction: column; text-align: left; margin: 2%; }
-  
+
   .descripcion-proyectos p { font-size: 18px; }
-  
-  .descripcion-proyectos h2 { font-size: 22px;  color: #78BE21;}  
+
+  .descripcion-proyectos h2 { font-size: 22px;  color: #78BE21;}
 }
 
 
 /* Smartphones (landscape) ----------- */
-@media only screen 
+@media only screen
 and (min-width : 321px) {
   /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen 
+@media only screen
 and (max-width : 320px) {
   /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
   /* Styles */
 }
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
   /* Styles */
 }
 
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait) {
 
 
 }
 
 /* Desktops and laptops ----------- */
-@media only screen 
+@media only screen
 and (min-width : 1224px) and (max-width : 1823px)  {
 
     /* NAVBAR */
@@ -1109,7 +1109,7 @@ and (min-width : 1224px) and (max-width : 1823px)  {
 
   #center-cropped-1 { width: 100%; height: 400px; background-position: center center; background-repeat: no-repeat; background-size: auto 400px; border-radius: 10px 10px 10px 10px; background-image:url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
 
-  #center-cropped-2 { width: 100%; height: 400px; background-position: center center; background-repeat: no-repeat; background-size: auto 400px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
+  #center-cropped-2 { width: 100%; height: 400px; background-position: center center; background-repeat: no-repeat; background-size: auto 400px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
 
   /* #center-cropped-3 { width: 100%; height: 400px; background-position: center center; background-repeat: no-repeat; background-size: auto 400px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");} */
   #center-cropped-3 { width: 100%; height: 400px; background-position: center center; background-repeat: no-repeat; background-size: auto 400px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/kHDn4nt/mapa.png");}
@@ -1137,9 +1137,9 @@ and (min-width : 1224px) and (max-width : 1823px)  {
 }
 
 /* Large screens ----------- */
-@media only screen 
+@media only screen
 and (min-width : 1824px) {
-  /* Styles esta es la mia!*/ 
+  /* Styles esta es la mia!*/
 }
 
 /* iPhone 4 - 5s ----------- */
@@ -1151,123 +1151,123 @@ only screen and (min-device-pixel-ratio : 1.5) {
    #logo-wrapper{ position: relative; width: 320px; height: 130px; top: 10%; margin: 0 auto 0 auto}
 
    .logo-sigla{ position: relative; width: 200px; height: 100px; margin: 0; }
-   
+
    .logo-sigla h1{ font-size: 79px;  margin: 2px;  }
-   
+
    .logo-descripcion { width: 100px;  margin: 2px 0 2px -35px; }
- 
+
    .logo-descripcion p{ font-size: 15px; }
-   
+
    /* SLIDER */
    input.set { display:none; }
-     
+
    #slides { margin:20px auto; width:80%; position:relative; }
-   
+
    #slides .mask { width: 80%; overflow:hidden; margin:auto; }
-   
+
    #slides .overflow { width: 400%; }
-   
+
    #slides .slide { width:25%; height:200px; line-height:200px; float:left; background:transparent; border-radius: 10px 10px 10px 10px }
-   
+
    #center-cropped-1 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image:url("https://i.ibb.co/v30S7St/daniu-mar.jpg");}
-   
-   #center-cropped-2 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/dBv1Cr5/DSCN4787.jpg");}
+
+   #center-cropped-2 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");}
 
    #center-cropped-3 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/kHDn4nt/mapa.png");}
    /* #center-cropped-3 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url("https://i.ibb.co/wr5twgQ/Curso-UTEC-2020.jpg");} */
-   
+
    #center-cropped-4 { width: 100%; height: 200px; background-position: center center; background-repeat: no-repeat; background-size: auto 200px; border-radius: 10px 10px 10px 10px; background-image: url('https://i.ibb.co/gMYTyVX/gis-day.jpg');}
-   
+
    #controls { width:100%; }
-   
+
    #controls label { display:none; width:2%; height:20px; opacity:0.3; position:absolute; top:50%; margin-top:-30px; cursor:pointer; background:transparent; }
-   
+
    #controls label:hover { opacity:0.8; }
-   
+
    .arrow {width:10px; background-color: transparent;}
- 
- 
+
+
    /* SECCION 2 */
- 
+
    .grid-container { height: 100%; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 80px); grid-gap: 55px; margin: 0 auto;}
-   
+
    .grid-container .columna{ text-align: center; position: relative; font-size: 8px; width: 300px; height: 80px; margin-top:-30px; }
-   
+
    .grid-container .columna .face { width: 300px; height: 80px; border-radius: 2px 2px 2px 2px }
-   
+
    .grid-container .columna .face.face1 { transform: translateY(40px); }
-   
+
    .grid-container .columna:hover .face.face1{ transform: translateY(0px); border-radius: 2px 2px 2px 2px }
-   
+
    .grid-container .columna .face.face2 {padding: 2px; transform: translateY(-40px); border-radius: 2px 2px 2px 2px }
-   
+
    .grid-container .columna:hover .face.face2{ transform: translateY(0); }
-   
+
    .grid-container .columna .face.face2 .contenido p { margin: 0; padding: 0; font-size: 14px}
-   
-   .grid-container .columna .face.face2 .contenido h3 { margin: 0; padding: 0; font-size: 8px; } 
- 
-   .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 70px);}  
-  
+
+   .grid-container .columna .face.face2 .contenido h3 { margin: 0; padding: 0; font-size: 8px; }
+
+   .grid-container .columna .face.face2 .contenido .container-nosotros {display: grid; grid-template-rows: repeat(1, 1fr); grid-template-columns: repeat(4, 70px);}
+
    .quienes-somos-pic { border-radius: 70%; width: 65px; height: 65px; margin: 1px;}
- 
+
    /* SECCION 3 */
-   
+
    .container-nosotros-seccion { display: grid; grid-template-columns: auto auto; padding: 2px; margin: 100px -20px}
-   
+
    .container-nosotros-seccion .grid-item { position: relative; height: 200px; width: 150px; padding: 2px; text-align: center; }
-   
+
    .flag { width: 15px; }
-   
+
    .section-2 a{ font-size: 15px; margin-left: 2px;}
-   
+
    .section-2 h3{ font-size: 20px; margin-top: 10px; margin-bottom: 5px;}
-   
+
    .section-2 p{ font-size: 12px;}
-   
+
    .img-descripcion-container { top: 20%; bottom: 14%; left: 2.5%; right: 2.5%; transition: opacity .5s, visibility .2s; border-radius: 10px 10px 10px 10px }
-   
+
    .grid-item:hover .img-descripcion-container { opacity: .9; margin: 2px; }
-   
+
    .img-descripcion { transform: translateY(1em); margin: 1px; }
-   
+
    .profile-pic { border-radius: 90%; width: 110px; height: 110px; margin:0}
-  
+
    /* SECCION 4 */
- 
+
    .wrapper { height: 320px; width: 300px; grid-gap: 8px; grid-auto-rows: minmax(90px, auto); }
- 
+
    .btn-icon{ width: 25px; height: 25px;}
- 
+
    .wrapper > div > div > h3{ font-weight: bold; letter-spacing: 1px; margin: .25em; font-size: 15px; }
- 
+
    .text{ margin: 3px; }
- 
+
    .text p{ font-size: 12px; }
- 
+
    /* CONTACTO Y FOOTER */
 
    .social-footer-container { height: 220px; width: 100%; }
-  
+
    #sec-ind-5 p{ font-size: 20px; }
-  
+
    #sec-ind-5 a{ font-size: 20px; }
-  
+
    #sec-ind-5 img{ width: 20px; }
 
   ul.banner-social-buttons { margin-top: 20px; font-size: 0; }
     /* Proyectos  */
 
     .descripcion-proyectos { display: flex; flex-direction: column; text-align: left; margin: 1.5%; }
-  
+
     .descripcion-proyectos p { font-size: 15px; }
-    
-    .descripcion-proyectos h2 { font-size: 20px;  color: #78BE21;}  
+
+    .descripcion-proyectos h2 { font-size: 20px;  color: #78BE21;}
 }
 
 /* iPhone 6 ----------- */
 @media
-only screen and (max-device-width: 667px) 
+only screen and (max-device-width: 667px)
 only screen and (-webkit-device-pixel-ratio: 2) {
   /* Styles */
 }
@@ -1279,7 +1279,7 @@ only screen and (-webkit-device-pixel-ratio: 2) {
 
 /* Samsung Galaxy S7 Edge ----------- */
 @media only screen
-and (-webkit-min-device-pixel-ratio: 3), 
+and (-webkit-min-device-pixel-ratio: 3),
 and (min-resolution: 192dpi) and (max-width:640px) {
  /* Styles */
 }
